@@ -1,0 +1,19 @@
+{
+  "name": "corsica-vimeo",
+  "version": "0.1.0",
+  "description": "Make Vimeo links more friendly.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/momo-the-monster/corsica-vimeo.git"
+  },
+  "keywords": [
+    "corsica", "vimeo"
+  ],
+  "author": "Momo the Monster <momodmonster@gmail.com>",
+  "license": "MPL2",
+  "bugs": {
+    "url": "https://github.com/momo-the-monster/corsica-vimeo/issues"
+  },
+  "homepage": "https://github.com/momo-the-monster/corsica-vimeo"
+}
