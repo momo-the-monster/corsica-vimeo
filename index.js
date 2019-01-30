@@ -35,7 +35,6 @@ module.exports = function(corsica) {
                         url += "/reset?id={{name}}";
                         //*************************************************************
 
-                        console.log(url);
                         player.on('ended', function() {
                             var req = new XMLHttpRequest();
                             req.open("GET", url, true);
