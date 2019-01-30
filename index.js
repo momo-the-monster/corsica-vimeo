@@ -12,7 +12,6 @@
  */
 
 module.exports = function(corsica) {
-  if (content.id === undefined) return;
   
   // use minimal embedding template from Vimeo
   var template = `<iframe src='https://player.vimeo.com/video/{{id}}?muted=1&autoplay=1&loop={{loop}}&title=0&byline=0&portrait=0' 
@@ -47,7 +46,8 @@ module.exports = function(corsica) {
   // Transform vimeo entries into embeds using id property
   //TODO: transform Vimeo URLs too
   corsica.on('vimeo', function(content) {
-    
+    if (content.id === undefined) return;
+	
     // replace {{id}} placeholder in template string
     var page = template.replace('{{id}}', content.id);
 	
