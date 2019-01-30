@@ -12,6 +12,7 @@
  */
 
 module.exports = function(corsica) {
+  if (content.id === undefined) return;
   
   // use minimal embedding template from Vimeo
   var template = `<iframe src='https://player.vimeo.com/video/{{id}}?muted=1&autoplay=1&loop={{loop}}&title=0&byline=0&portrait=0' 
